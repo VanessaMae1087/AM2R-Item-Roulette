@@ -3,4 +3,4 @@ All items rapidly shuffle between eachother, from Missiles, Power Bombs, Screw A
 
 All Expansion items have increased totals to make things a bit less tedious. Missiles give 10, Supers and Power Bombs give 5. With these values halfed on Hard and Fusion.
 
-**Please note there's no Source Code for this, all I did was edited the vanilla game's data.win file.**
+**Source Code is being added in soon**
