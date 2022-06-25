@@ -206,7 +206,7 @@ instance_create(240, 96, scr_itemsopen(oControl.mod_204));</code>
     <instance objName="oSolid1" x="240" y="96" name="inst_115999" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="256" y="96" name="inst_116000" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="128" y="48" name="inst_116001" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oMGammaTriggerProx" x="176" y="368" name="inst_116002" locked="0" code="init_monster_trigger(13, 1);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oMGammaTriggerProx" x="176" y="368" name="inst_116002" locked="0" code="if (global.lavastate &lt;= 2) {&#xA;    instance_destroy();&#xA;}&#xA;init_monster_trigger(13, 1);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockSand" x="48" y="672" name="inst_116003" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockSand" x="64" y="672" name="inst_116004" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockSand" x="80" y="672" name="inst_116005" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -251,7 +251,7 @@ instance_create(240, 96, scr_itemsopen(oControl.mod_204));</code>
     <instance objName="oGotoRoom" x="0" y="160" name="inst_116044" locked="0" code="&#xA;targetroom = rm_a3a03;&#xA;targetx = 304;&#xA;targety = 400;&#xA;height = 80;&#xA;direction = 180;&#xA;camstartx = 304;&#xA;camstarty = 360;&#xA;transitionx = 316;&#xA;transitiony = 160;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGotoRoom" x="144" y="720" name="inst_116045" locked="0" code="&#xA;targetroom = rm_a3a08;&#xA;targetx = 144;&#xA;targety = 16;&#xA;height = 64;&#xA;direction = 270;&#xA;camstartx = 144;&#xA;camstarty = 16;&#xA;transitionx = 150;&#xA;transitiony = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCameraLimit" x="0" y="176" name="inst_116046" locked="0" code="&#xA;areax = 48;&#xA;areay = -120;&#xA;lockx = 0;&#xA;locky = 120;&#xA;wall = 0;&#xA;smoothin = 15;&#xA;smoothout = 15;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oElderSeptogg" x="112" y="240" name="inst_7A31551D" locked="0" code="if (oControl.mod_randomgamebool == 1 &amp;&amp; oControl.mod_previous_room == rm_a3a08)&#xA;{&#xA;    if (oControl.mod_septoggs_bombjumps_easy == 0 &amp;&amp; global.item[0] == 1) { xstart = -500; }&#xA;    else if (scr_septoggs_246() || instance_exists(oMGammaTriggerProx)) { xstart = -500; }&#xA;}&#xA;else { xstart = -500; }&#xA;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oElderSeptogg" x="112" y="240" name="inst_7A31551D" locked="0" code="xstart = -500;&#xA;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="-64" y="80" name="inst_92A1A7EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="-64" y="160" name="inst_07E3B67D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

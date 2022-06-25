@@ -130,7 +130,7 @@ global.objdeactivate = 0;</code>
     <instance objName="oBlockScrew" x="80" y="672" name="inst_133846" locked="0" code="&#xA;link_tile(tlArea5B, 32, 0);&#xA;regentime = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockScrew" x="64" y="672" name="inst_133847" locked="0" code="&#xA;link_tile(tlArea5B, 80, 16);&#xA;regentime = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockScrew" x="48" y="672" name="inst_133848" locked="0" code="&#xA;link_tile(tlArea5B, 64, 16);&#xA;regentime = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDoorA5" x="24" y="560" name="inst_133849" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorA5" x="24" y="560" name="inst_133849" locked="0" code="if (global.lavastate &lt;= 6) lock = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="48" y="880" name="inst_133850" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope3B" x="112" y="880" name="inst_133851" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope3B" x="80" y="896" name="inst_133852" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

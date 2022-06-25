@@ -3,8 +3,8 @@
   <caption></caption>
   <width>960</width>
   <height>240</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -12,8 +12,7 @@
   <showcolour>0</showcolour>
   <code>global.mapoffsetx = 38;
 global.mapoffsety = 37;
-global.waterlevel = 0;
-global.watertype = 0;
+if (global.lavastate &lt;= 6) make_liquid(1, 227, 0, 0, 0, 0, 1);
 global.floormaterial = 1;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -188,6 +187,12 @@ global.floormaterial = 1;</code>
     <instance objName="oSpikeSolid" x="752" y="16" name="inst_125835" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="oSpikeSolid" x="272" y="80" name="inst_125836" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="oSlope1" x="688" y="176" name="inst_125837" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="848" y="112" name="inst_B1076AB8" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    tile_layer_delete(-98);&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="832" y="144" name="inst_DCCEF51B" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="784" y="160" name="inst_2AB36892" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="oSlope1B" x="752" y="160" name="inst_F0A79DC1" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="624" y="176" name="inst_9DC49B47" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="208" y="192" name="inst_75440960" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tlRock4B" x="0" y="160" w="48" h="16" xo="16" yo="0" id="10072801" name="tile_10072801" depth="-90" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -335,6 +340,33 @@ global.floormaterial = 1;</code>
     <tile bgName="tlRock4B" x="912" y="160" w="16" h="16" xo="48" yo="0" id="10072943" name="tile_10072943" depth="-90" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlRock4B" x="688" y="176" w="16" h="32" xo="0" yo="144" id="10072944" name="tile_10072944" depth="-90" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlRock4B" x="704" y="192" w="16" h="16" xo="16" yo="16" id="10072945" name="tile_10072945" depth="-90" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="752" y="160" w="32" h="32" xo="0" yo="80" id="10165941" name="inst_E2BEF0A4" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="784" y="144" w="16" h="32" xo="128" yo="0" id="10165942" name="inst_EDFA774C" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="912" y="96" w="16" h="32" xo="16" yo="176" id="10165944" name="inst_8F2641EA" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="896" y="112" w="16" h="16" xo="48" yo="160" id="10165945" name="inst_E6723FE3" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="896" y="128" w="16" h="16" xo="48" yo="144" id="10165946" name="inst_40C60A88" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="912" y="128" w="16" h="16" xo="64" yo="0" id="10165947" name="inst_5D5102C5" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="928" y="144" w="32" h="32" xo="32" yo="80" id="10165948" name="inst_ECDD03F8" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="912" y="144" w="16" h="16" xo="48" yo="144" id="10165949" name="inst_6BF45EB0" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="800" y="144" w="32" h="32" xo="96" yo="0" id="10165950" name="inst_22B9F74A" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="832" y="144" w="16" h="16" xo="0" yo="0" id="10165951" name="inst_1A2DDD6F" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="848" y="112" w="16" h="16" xo="0" yo="0" id="10165952" name="inst_9DB2F98C" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="864" y="112" w="16" h="16" xo="32" yo="144" id="10165953" name="inst_C66C23D2" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="848" y="144" w="16" h="16" xo="32" yo="144" id="10165954" name="inst_AB9748D5" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="832" y="160" w="16" h="16" xo="32" yo="144" id="10165955" name="inst_887DF6BE" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="848" y="128" w="16" h="16" xo="0" yo="32" id="10165956" name="inst_E716AA69" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="848" y="96" w="32" h="16" xo="64" yo="112" id="10165957" name="inst_54CA2426" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="784" y="176" w="48" h="48" xo="16" yo="16" id="10165958" name="inst_C7E443C6" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="832" y="176" w="48" h="48" xo="16" yo="16" id="10165959" name="inst_CB2CDE9D" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="880" y="160" w="48" h="48" xo="16" yo="16" id="10165960" name="inst_8E4F27BA" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="896" y="144" w="16" h="16" xo="16" yo="16" id="10165961" name="inst_94B9F4EF" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="848" y="160" w="32" h="16" xo="16" yo="16" id="10165962" name="inst_8EEFE81B" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="864" y="128" w="32" h="32" xo="16" yo="16" id="10165963" name="inst_23D1A1C7" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="880" y="80" w="32" h="32" xo="16" yo="16" id="10165964" name="inst_2A50B493" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="880" y="112" w="16" h="16" xo="16" yo="16" id="10165965" name="inst_DD796E03" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="624" y="176" w="16" h="16" xo="112" yo="176" id="10165966" name="inst_F0A28274" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="208" y="192" w="16" h="16" xo="128" yo="96" id="10165967" name="inst_65857D87" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock4B" x="208" y="208" w="16" h="16" xo="128" yo="160" id="10165968" name="inst_D734B70D" depth="-98" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Spikes" x="256" y="64" w="32" h="32" xo="0" yo="0" id="10072946" name="tile_10072946" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Spikes" x="256" y="96" w="32" h="32" xo="0" yo="64" id="10072947" name="tile_10072947" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Spikes" x="288" y="64" w="32" h="32" xo="80" yo="0" id="10072948" name="tile_10072948" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

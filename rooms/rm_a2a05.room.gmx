@@ -103,8 +103,8 @@ instance_create(848, 80, scr_itemsopen(oControl.mod_152));</code>
     <instance objName="oSolid2x1" x="752" y="160" name="inst_110262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid2x1" x="832" y="160" name="inst_110263" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1x2" x="656" y="112" name="inst_110264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oMAlpha2TriggerProx" x="512" y="96" name="inst_110265" locked="0" code="&#xA;init_monster_trigger(7, 1);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oMEgg2" x="576" y="144" name="inst_110266" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oMAlpha2TriggerProx" x="512" y="96" name="inst_110265" locked="0" code="if (global.lavastate &lt;= 1) {&#xA;    instance_destroy();&#xA;}&#xA;init_monster_trigger(7, 1);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oMEgg2" x="576" y="144" name="inst_110266" locked="0" code="if (global.lavastate &lt;= 1) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockBomb" x="608" y="192" name="inst_110267" locked="0" code="&#xA;link_tile(tlChozoTemple2, 112, 288);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGotoRoom" x="0" y="192" name="inst_110268" locked="0" code="&#xA;targetroom = rm_a2h02;&#xA;targetx = 1584;&#xA;targety = 912;&#xA;height = 80;&#xA;direction = 180;&#xA;camstartx = 1440;&#xA;camstarty = 840;&#xA;transitionx = 316;&#xA;transitiony = 192;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCameraLimit" x="352" y="208" name="inst_110269" locked="0" code="&#xA;areax = 256;&#xA;areay = -240;&#xA;lockx = 480;&#xA;locky = 0;&#xA;wall = 0;&#xA;smoothin = 120;&#xA;smoothout = 20;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

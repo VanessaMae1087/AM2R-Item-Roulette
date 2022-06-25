@@ -72,7 +72,7 @@ global.objdeactivate = 0;</code>
     <instance objName="oSlope1" x="192" y="640" name="inst_133138" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBackground" x="0" y="0" name="inst_133139" locked="0" code="&#xA;load_bgset(50);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="192" y="656" name="inst_133140" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="oDoorA5" x="24" y="624" name="inst_133141" locked="0" code="&#xA;lock = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorA5" x="24" y="624" name="inst_133141" locked="0" code="lock = 4;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="112" y="672" name="inst_133143" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="0" y="688" name="inst_133144" locked="0" code="" scaleX="9" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="0" y="512" name="inst_133145" locked="0" code="" scaleX="3" scaleY="7" colour="4294967295" rotation="0"/>

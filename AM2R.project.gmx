@@ -5064,7 +5064,6 @@
       </sprites>
       <sprite>sprites\sShipGlow</sprite>
     </sprites>
-    <sprite>sprites\sRoboGeo</sprite>
     <sprites name="Multitroid Assets">
       <sprite>sprites\sMultitroidIcon</sprite>
       <sprite>sprites\sPalMultitroidNew</sprite>
@@ -5282,6 +5281,10 @@
       <sprite>sprites\sPowerPalette</sprite>
       <sprite>sprites\sVariaPalette</sprite>
       <sprite>sprites\sGravityPalette</sprite>
+    </sprites>
+    <sprites name="Mimlet">
+      <sprite>sprites\sRoboGeo</sprite>
+      <sprite>sprites\sItemIceTrap</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -7320,6 +7323,7 @@
     </objects>
     <objects name="Mimlet">
       <object>objects\oRoboGeo</object>
+      <object>objects\oItemIceTrap</object>
     </objects>
   </objects>
   <timelines name="timelines">

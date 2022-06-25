@@ -476,7 +476,7 @@ with(oBlockSpeed){
     <instance objName="oSolid2x2Stone" x="704" y="1632" name="inst_102579" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid2x2Stone" x="672" y="1600" name="inst_102580" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1Stone" x="608" y="1600" name="inst_102581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSolid1x4" x="832" y="368" name="inst_102582" locked="0" code="&#xA;if (global.lavastate &gt; 1) {&#xA;    tile_layer_delete(-99);&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1x4" x="832" y="368" name="inst_102582" locked="0" code="if (global.lavastate &gt; 1) {&#xA;    tile_layer_delete(-99);&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="1056" y="272" name="inst_102583" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="1040" y="288" name="inst_102584" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="1024" y="288" name="inst_102585" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

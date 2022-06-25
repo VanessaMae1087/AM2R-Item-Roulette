@@ -111,6 +111,9 @@ global.darkness = 0;</code>
     <instance objName="oSolid4x1" x="320" y="624" name="inst_F3719074" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="-64" y="784" name="inst_21D4525D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="-64" y="864" name="inst_93E4314B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="32" y="592" name="inst_553D8A86" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    tile_layer_delete(-108)&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="32" y="576" name="inst_D73B6B49" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    tile_layer_delete(-103)&#xA;    instance_destroy();&#xA;}&#xA;else&#xA;{&#xA; tile_layer_delete(-101)&#xA;}" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="64" y="544" name="inst_2DEB82CA" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tlRock4BG" x="256" y="560" w="32" h="48" xo="80" yo="64" id="10070899" name="tile_10070899" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -361,7 +364,6 @@ global.darkness = 0;</code>
     <tile bgName="tlRock4A" x="176" y="1168" w="48" h="32" xo="16" yo="16" id="10071142" name="tile_10071142" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlRock4A" x="224" y="1152" w="48" h="48" xo="16" yo="16" id="10071143" name="tile_10071143" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlRock4A" x="240" y="1120" w="48" h="48" xo="16" yo="16" id="10071144" name="tile_10071144" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlArea4Tower" x="0" y="512" w="96" h="128" xo="0" yo="400" id="10071145" name="tile_10071145" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Tower" x="0" y="464" w="16" h="48" xo="80" yo="48" id="10071146" name="tile_10071146" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlRock4A" x="272" y="704" w="16" h="16" xo="32" yo="160" id="10071147" name="tile_10071147" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlRock4A" x="256" y="640" w="16" h="16" xo="32" yo="160" id="10071148" name="tile_10071148" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -383,7 +385,6 @@ global.darkness = 0;</code>
     <tile bgName="tlArea4Tower" x="16" y="864" w="48" h="16" xo="96" yo="160" id="10071164" name="tile_10071164" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Tower" x="64" y="784" w="16" h="16" xo="96" yo="176" id="10071165" name="tile_10071165" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Tower" x="64" y="864" w="16" h="16" xo="96" yo="176" id="10071166" name="tile_10071166" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlArea4Tower" x="-48" y="576" w="48" h="48" xo="96" yo="480" id="10161478" name="inst_D3FF2944" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Tower" x="-64" y="656" w="48" h="32" xo="48" yo="128" id="10161479" name="inst_DAA4174F" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Tower" x="-64" y="320" w="48" h="32" xo="48" yo="128" id="10161480" name="inst_13166579" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea4Tower" x="-64" y="0" w="48" h="16" xo="48" yo="144" id="10161481" name="inst_17E2A31C" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -543,6 +544,28 @@ global.darkness = 0;</code>
     <tile bgName="tlRock4A" x="336" y="96" w="48" h="48" xo="16" yo="16" id="10161671" name="inst_249926C3" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlRock4A" x="336" y="144" w="48" h="16" xo="16" yo="16" id="10161672" name="inst_8F1FDAB4" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlRock4A" x="288" y="0" w="48" h="16" xo="16" yo="16" id="10161673" name="inst_0A689FDF" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="0" y="592" w="96" h="48" xo="0" yo="480" id="10166283" name="inst_49B0632A" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="0" y="512" w="96" h="128" xo="0" yo="400" id="10166262" name="inst_7D910C63" depth="-101" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-48" y="576" w="48" h="48" xo="96" yo="480" id="10166265" name="inst_F0454BE9" depth="-101" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-32" y="560" w="16" h="16" xo="64" yo="112" id="10166247" name="inst_3C2C8084" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-48" y="560" w="16" h="16" xo="48" yo="112" id="10166248" name="inst_FC861D8E" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-48" y="576" w="16" h="16" xo="48" yo="96" id="10166249" name="inst_2272A0AE" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-48" y="592" w="16" h="16" xo="64" yo="112" id="10166250" name="inst_D6BE641F" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-32" y="608" w="16" h="16" xo="48" yo="96" id="10166251" name="inst_1D7139EB" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-48" y="608" w="16" h="16" xo="80" yo="112" id="10166252" name="inst_A008CA2E" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-32" y="576" w="16" h="32" xo="48" yo="96" id="10166253" name="inst_99124E1C" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-16" y="592" w="16" h="32" xo="48" yo="128" id="10166254" name="inst_02298162" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="-16" y="576" w="16" h="16" xo="64" yo="112" id="10166255" name="inst_C07C096C" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="16" y="560" w="80" h="32" xo="16" yo="400" id="10166271" name="inst_ED8D4451" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="64" y="592" w="32" h="16" xo="64" yo="432" id="10166272" name="inst_4242C711" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="32" y="592" w="32" h="16" xo="16" yo="464" id="10166273" name="inst_876B3F9C" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="16" y="592" w="16" h="16" xo="96" yo="144" id="10166274" name="inst_A7690327" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="0" y="576" w="16" h="32" xo="80" yo="64" id="10166275" name="inst_12696CC6" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="64" y="512" w="16" h="48" xo="128" yo="48" id="10166276" name="inst_11375708" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="32" y="528" w="32" h="32" xo="96" yo="96" id="10166277" name="inst_D7A16ED2" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="0" y="512" w="16" h="64" xo="0" yo="400" id="10166278" name="inst_47F91B74" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="16" y="512" w="16" h="48" xo="16" yo="400" id="10166279" name="inst_E8AD82E0" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlArea4Tower" x="32" y="512" w="32" h="16" xo="112" yo="96" id="10166280" name="inst_E53B7D69" depth="-103" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

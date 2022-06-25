@@ -95,7 +95,9 @@ alarm[0] = ShuffleTime
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (self)
+            <string>
+
+with (self)
     instance_destroy()
 Rando = floor(irandom_range(1, 26))
 if (Rando == 1)
@@ -105,7 +107,7 @@ if (Rando == 2)
     if (global.jumpball == 0)
         RouletteResult = instance_create(x, y, oItemJumpBall)
     else
-        RouletteResult = instance_create(x, y, oItemSM_51)
+        RouletteResult = instance_create(x, y, oItemIceTrap)
 }
 if (Rando == 3)
 {
@@ -121,7 +123,7 @@ if (Rando == 5)
     if (global.spacejump == 0)
         RouletteResult = instance_create(x, y, oItemSpaceJump)
     else
-        RouletteResult = instance_create(x, y, oItemPB_58)
+        RouletteResult = instance_create(x, y, oItemIceTrap)
 }
 if (Rando == 6)
 {
@@ -146,7 +148,7 @@ if (Rando == 10)
     if (global.ibeam == 0)
         RouletteResult = instance_create(x, y, oItemIBeam)
     else
-        RouletteResult = instance_create(x, y, oItemETank_103)
+        RouletteResult = instance_create(x, y, oItemIceTrap)
 }
 if (Rando == 11)
     RouletteResult = instance_create(x, y, oItemWBeam)
@@ -167,9 +169,9 @@ if (Rando == 13)
 if (Rando == 14)
     RouletteResult = instance_create(x, y, oItemM_52)
 if (Rando == 15)
-    RouletteResult = instance_create(x, y, oItemSM_51)
+    RouletteResult = instance_create(x, y, oItemIceTrap)
 if (Rando == 16)
-    RouletteResult = instance_create(x, y, oItemPB_58)
+    RouletteResult = instance_create(x, y, oItemIceTrap)
 if (Rando == 17)
     RouletteResult = instance_create(x, y, oItemETank_103)
 if (Rando == 18)

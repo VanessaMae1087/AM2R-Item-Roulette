@@ -111,7 +111,7 @@ instance_create(56, 48, scr_itemsopen(oControl.mod_151));</code>
     <instance objName="oSolid2x2" x="576" y="48" name="inst_110627" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid2x2" x="544" y="48" name="inst_110628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid2x2" x="800" y="80" name="inst_110629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oMAlpha2TriggerProx" x="832" y="160" name="inst_110630" locked="0" code="init_monster_trigger(6, 1);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oMAlpha2TriggerProx" x="832" y="160" name="inst_110630" locked="0" code="if (global.lavastate &lt;= 1) {&#xA;    instance_destroy();&#xA;}&#xA;init_monster_trigger(6, 1);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oA2WaterJetMachine" x="808" y="80" name="inst_110631" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oFadeTiles" x="80" y="16" name="inst_110632" locked="0" code="&#xA;areax = 80;&#xA;areay = 32;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oFadeTiles" x="288" y="16" name="inst_110633" locked="0" code="&#xA;areax = 128;&#xA;areay = 32;&#xA;layer = -102;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -91,7 +91,7 @@ mus_change(mus_get_main_song());</code>
     <instance objName="oSlope3" x="80" y="1056" name="inst_103979" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope3" x="64" y="1088" name="inst_103980" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope3" x="32" y="1312" name="inst_103981" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSolid1x8" x="128" y="1280" name="inst_103982" locked="0" code="&#xA;if (global.lavastate &gt; 5) {&#xA;    tile_layer_delete(-98);&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1x8" x="128" y="1280" name="inst_103982" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    tile_layer_delete(-98);&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope4" x="240" y="1232" name="inst_103983" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope4" x="256" y="1248" name="inst_103984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="528" y="832" name="inst_103985" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -263,7 +263,7 @@ mus_change(mus_get_main_song());</code>
     <instance objName="oSolid1" x="48" y="1120" name="inst_104151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="48" y="1136" name="inst_104152" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="544" y="832" name="inst_104153" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSolid1x8" x="160" y="528" name="inst_104154" locked="0" code="&#xA;if (global.lavastate &gt; 3) {&#xA;    tile_layer_delete(-99);&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1x8" x="160" y="528" name="inst_104154" locked="0" code="if (global.lavastate &gt; 3) {&#xA;    tile_layer_delete(-99);&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="192" y="928" name="inst_104155" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="192" y="944" name="inst_104156" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="192" y="960" name="inst_104157" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

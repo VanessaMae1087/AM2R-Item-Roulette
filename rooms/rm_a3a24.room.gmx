@@ -12,8 +12,7 @@
   <showcolour>0</showcolour>
   <code>global.mapoffsetx = 66;
 global.mapoffsety = 30;
-global.watertype = 0;
-global.waterlevel = 0;
+if (global.lavastate &lt;= 2) make_liquid(1, 232, 0, 0, 0, 0, 1);
 global.floormaterial = 1;
 SoundFX_Preset(1);
 make_liquid(1, 464, 0, 0, 0, 0, 1);</code>
@@ -134,6 +133,9 @@ make_liquid(1, 464, 0, 0, 0, 0, 1);</code>
     <instance objName="oSolid4x1" x="320" y="192" name="inst_6258FCFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="320" y="336" name="inst_836D008E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="320" y="416" name="inst_8E316D02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="192" y="272" name="inst_A2930770" locked="0" code="if (global.lavastate &gt; 1) {&#xA;    tile_layer_delete(-105)&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="144" y="288" name="inst_03DF443D" locked="0" code="if (global.lavastate &gt; 1) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="128" y="304" name="inst_4337CEA3" locked="0" code="if (global.lavastate &gt; 1) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tlChozoTemple3C" x="-64" y="0" w="64" h="48" xo="0" yo="192" id="10157448" name="inst_0FA2FED4" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -387,6 +389,64 @@ make_liquid(1, 464, 0, 0, 0, 0, 1);</code>
     <tile bgName="tlChozoTemple3C" x="352" y="96" w="32" h="48" xo="0" yo="192" id="10157493" name="inst_E59133E9" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlChozoTemple3C" x="352" y="144" w="32" h="48" xo="0" yo="192" id="10157494" name="inst_D546227E" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlChozoTemple3C" x="352" y="192" w="32" h="32" xo="0" yo="192" id="10157495" name="inst_881750B8" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="112" y="288" w="32" h="32" xo="0" yo="144" id="10166404" name="inst_B7EFDF74" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="144" y="288" w="16" h="16" xo="16" yo="192" id="10166405" name="inst_86E7A830" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="192" y="256" w="16" h="32" xo="48" yo="208" id="10166406" name="inst_35727983" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="176" y="272" w="16" h="16" xo="32" yo="224" id="10166407" name="inst_611C4860" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="192" y="288" w="16" h="16" xo="112" yo="192" id="10166408" name="inst_D7CB13B9" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="144" y="304" w="16" h="16" xo="112" yo="192" id="10166409" name="inst_47E65AB6" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="208" y="256" w="32" h="32" xo="32" yo="144" id="10166410" name="inst_6332CFF9" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="240" y="272" w="16" h="16" xo="64" yo="80" id="10166411" name="inst_1D9AFC6F" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="160" y="272" w="16" h="32" xo="64" yo="144" id="10166417" name="inst_50533911" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="176" y="288" w="16" h="16" xo="96" yo="96" id="10166418" name="inst_2DBA1EC7" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="112" y="320" w="32" h="32" xo="96" yo="208" id="10166419" name="inst_C1D5D42E" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="160" y="304" w="32" h="32" xo="96" yo="208" id="10166420" name="inst_6B9842DE" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="208" y="288" w="32" h="32" xo="96" yo="208" id="10166421" name="inst_447AC982" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="160" y="336" w="32" h="32" xo="96" yo="208" id="10166426" name="inst_1A4CEAB2" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="112" y="352" w="32" h="32" xo="96" yo="208" id="10166427" name="inst_85C8EEAF" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="144" y="368" w="32" h="32" xo="96" yo="208" id="10166428" name="inst_7E4DB02A" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="144" y="400" w="32" h="32" xo="96" yo="208" id="10166429" name="inst_6E45BD72" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="176" y="400" w="32" h="32" xo="96" yo="208" id="10166430" name="inst_E1F22C6C" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="336" y="432" w="32" h="32" xo="96" yo="208" id="10166436" name="inst_F5D0C4CF" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="144" y="432" w="32" h="32" xo="96" yo="208" id="10166437" name="inst_72D1A0CE" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="176" y="432" w="32" h="32" xo="96" yo="208" id="10166438" name="inst_4D4C9D33" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="208" y="432" w="32" h="32" xo="96" yo="208" id="10166439" name="inst_B79AD426" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="240" y="432" w="32" h="32" xo="96" yo="208" id="10166440" name="inst_BCB64ECB" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="144" y="464" w="32" h="32" xo="96" yo="208" id="10166441" name="inst_6B0B8017" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="176" y="464" w="32" h="32" xo="96" yo="208" id="10166442" name="inst_C30E6FF0" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="208" y="464" w="32" h="32" xo="96" yo="208" id="10166443" name="inst_9440B893" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="240" y="464" w="32" h="32" xo="96" yo="208" id="10166444" name="inst_7B3929BE" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="272" y="432" w="32" h="32" xo="96" yo="208" id="10166445" name="inst_26C2FDD7" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="304" y="432" w="32" h="32" xo="96" yo="208" id="10166446" name="inst_107E6008" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="272" y="464" w="32" h="32" xo="96" yo="208" id="10166447" name="inst_6C84AF04" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="304" y="464" w="32" h="32" xo="96" yo="208" id="10166448" name="inst_DCAB1F8B" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="336" y="464" w="32" h="32" xo="96" yo="208" id="10166449" name="inst_B0D2D747" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="368" y="480" w="16" h="16" xo="112" yo="96" id="10166451" name="inst_4F6629AE" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="192" y="304" w="16" h="16" xo="112" yo="96" id="10166453" name="inst_4424F71D" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="144" y="320" w="16" h="48" xo="112" yo="112" id="10166454" name="inst_25EDDD3C" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="192" y="320" w="32" h="16" xo="96" yo="208" id="10166456" name="inst_814247DE" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="192" y="336" w="32" h="32" xo="96" yo="208" id="10166459" name="inst_D8FA07D6" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="176" y="368" w="32" h="32" xo="96" yo="208" id="10166461" name="inst_54728AD7" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="224" y="320" w="32" h="32" xo="96" yo="208" id="10166473" name="inst_F8456DC1" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="224" y="352" w="32" h="32" xo="96" yo="208" id="10166474" name="inst_61DEFEF9" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="224" y="384" w="32" h="32" xo="96" yo="208" id="10166475" name="inst_6B7C92AC" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="208" y="368" w="16" h="48" xo="112" yo="112" id="10166476" name="inst_B509FFB6" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="208" y="416" w="16" h="16" xo="112" yo="96" id="10166477" name="inst_F068FA16" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="256" y="352" w="32" h="32" xo="96" yo="208" id="10166478" name="inst_5413B929" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="288" y="352" w="32" h="32" xo="96" yo="208" id="10166479" name="inst_29E6D9A2" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="320" y="352" w="32" h="32" xo="96" yo="208" id="10166480" name="inst_73DBBD94" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="352" y="352" w="32" h="32" xo="96" yo="208" id="10166481" name="inst_DB8C32DF" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="352" y="384" w="32" h="32" xo="96" yo="208" id="10166482" name="inst_BE75F879" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="320" y="384" w="32" h="32" xo="96" yo="208" id="10166483" name="inst_9077A401" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="288" y="384" w="32" h="32" xo="96" yo="208" id="10166484" name="inst_15451EE3" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="256" y="384" w="32" h="32" xo="96" yo="208" id="10166485" name="inst_0F79AB30" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="240" y="288" w="16" h="32" xo="96" yo="208" id="10166486" name="inst_582E5138" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="224" y="416" w="32" h="16" xo="96" yo="208" id="10166487" name="inst_93B24014" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="256" y="416" w="32" h="16" xo="96" yo="208" id="10166488" name="inst_295286DE" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="288" y="416" w="32" h="16" xo="96" yo="208" id="10166489" name="inst_7C07739F" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="320" y="416" w="32" h="16" xo="96" yo="208" id="10166490" name="inst_73491CF1" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="352" y="416" w="32" h="16" xo="96" yo="208" id="10166491" name="inst_A221A9EE" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="368" y="432" w="16" h="48" xo="112" yo="96" id="10166492" name="inst_3071FA64" depth="-105" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

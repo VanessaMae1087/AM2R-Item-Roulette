@@ -12,8 +12,7 @@
   <showcolour>0</showcolour>
   <code>global.mapoffsetx = 36;
 global.mapoffsety = 43;
-global.watertype = 0;
-global.waterlevel = 0;
+if (global.lavastate &lt;= 6) make_liquid(1, -128, 0, 0, 0, 0, 1);
 global.floormaterial = 1;
 mus_change(musItemAmb);</code>
   <enableViews>-1</enableViews>
