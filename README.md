@@ -1,10 +1,15 @@
 ## Item Roulette
 This AM2R mod takes the term randomizer... maybe a little too literally.
 All items rapidly shuffle between eachother, from Missiles, Power Bombs, Screw Attack, you name it. This has some softlock potential, but thats just how the gamble is. Will you get lucky?
-
 All Expansion items have increased totals to make things a bit less tedious. Missiles give 10, Supers and Power Bombs give 5. With these values halfed on Hard and Fusion.
 
-## Co-op Changes
+This mod is based on [AM2R-Multitroid](https://github.com/milesthenerd/AM2R-Multitroid), which in turn is based on [AM2R Community Updates](https://github.com/AM2R-Community-Developers/AM2R-Community-Updates). This doesn't have its own server application yet. Use a 1.4.1 server to host games.
+
+## Changes from vanilla Multitroid
+As of right now, item counts arent synced correctly. Collecting an Energy Tank wont send one to the server unless that original items ID is suppose to be an Energy Tank. This doesnt appear to affect major items like Spider Ball or Plasma Beam, but either way its reccommended to disable item sharing. Sharing cannot be disable in SA-X Mode, so just have that mode off and just change player teams accordingly. Crashes may happen because of this however.
+
+
+## Overall Co-op Changes
 String compression scripts are by Homunculus: https://marketplace.yoyogames.com/assets/4560/strict
 
 Special thanks to Lojical/Lojemiru and ShirtyScarab for help with programming and art.
