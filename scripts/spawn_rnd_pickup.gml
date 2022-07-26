@@ -12,7 +12,7 @@ if (random(100) < argument0) {
         spawnX = irandom(1); // 50% chance to Spawn an X even if health, missles, and supers are full.
     }
     
-    if ((global.item[0] == 0 && global.maxpbombs > 0) || oControl.mod_insanitymode == 1) pickup = irandom(4); 
+    if (global.maxpbombs > 0) pickup = irandom(4); 
     
     if (pickup == 0) {
         if ((global.playerhealth < global.maxhealth && instance_number(oHPickup) < 6) || (oControl.mod_fusion == 1 && spawnX == 1 && canbeX && instance_number(oHPickup) < 6)) {

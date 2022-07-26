@@ -12,7 +12,7 @@
   <showcolour>0</showcolour>
   <code>global.mapoffsetx = 28;
 global.mapoffsety = 41;
-if (global.lavastate &lt;= 6) make_liquid(1, 183, 0, 0, 0, 0, 1);
+if (global.lavastate &lt;= 5) make_liquid(1, 183, 0, 0, 0, 0, 1);
 global.floormaterial = 1;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -157,13 +157,13 @@ global.floormaterial = 1;</code>
     <instance objName="oSolid1" x="368" y="384" name="inst_126962" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="208" y="432" name="inst_126963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="768" y="448" name="inst_126964" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSolid1" x="640" y="416" name="inst_6F641FEB" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSolid1" x="752" y="432" name="inst_283E6023" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="640" y="416" name="inst_6F641FEB" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="752" y="432" name="inst_283E6023" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="592" y="400" name="inst_67037AB8" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="576" y="384" name="inst_2035306E" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="560" y="368" name="inst_B3A7B4AC" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="544" y="320" name="inst_C517CB1C" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="oSolid1" x="560" y="240" name="inst_B2CC530A" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    tile_layer_delete(-98);&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="560" y="240" name="inst_B2CC530A" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    tile_layer_delete(-98);&#xA;    instance_destroy();&#xA;}" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="oSlope2B" x="784" y="416" name="inst_FC4A9FA6" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope2B" x="672" y="400" name="inst_EAA02827" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope2" x="576" y="368" name="inst_AD9CFBE0" locked="0" code="if (global.lavastate &gt; 5) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

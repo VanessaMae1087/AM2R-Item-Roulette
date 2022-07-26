@@ -40,7 +40,7 @@ if (random(100) <= argument2) {
                 xParasite = instance_create(argument0, argument1, oSMXPickup);
             }
             else instance_create(argument0, argument1, oSMPickup);
-        } else if ((global.item[0] == 0 && global.maxpbombs > 0) || oControl.mod_insanitymode == 1) pickup = 4;
+        } else if ((global.maxpbombs > 0) || oControl.mod_insanitymode == 1) pickup = 4;
     }
     if (sprite_index != sQueenProjFrozen && instance_exists(xParasite) && oControl.mod_fusion == 1) {
         PlaySoundMono(sndXMorph2);

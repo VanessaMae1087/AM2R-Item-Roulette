@@ -75,23 +75,11 @@ if (oControl.mod_gravity != 9) instance_create(152, 160, scr_itemsopen(oControl.
     <instance objName="oSlope4" x="256" y="64" name="inst_135808" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlopeFL1" x="256" y="144" name="inst_135809" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="112" y="160" name="inst_135810" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oGravityPodGlow" x="160" y="160" name="inst_135811" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oGravityPod" x="160" y="160" name="inst_135812" locked="0" code="if(global.sax &amp;&amp; global.saxmode) { closed = 1; xoff = 0; }&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oGravityPodTrigger" x="152" y="152" name="inst_135813" locked="0" code="if(global.sax &amp;&amp; global.saxmode) instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="320" y="64" name="inst_BF39513C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="320" y="144" name="inst_6C31DCBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItemGravity" x="152" y="160" name="inst_AB71C880" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="tlGravityBG" x="192" y="64" w="16" h="16" xo="0" yo="64" id="10111808" name="tile_10111808" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="176" y="80" w="32" h="80" xo="48" yo="0" id="10111809" name="tile_10111809" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="192" y="48" w="16" h="16" xo="32" yo="80" id="10111810" name="tile_10111810" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="112" y="128" w="32" h="16" xo="48" yo="128" id="10111811" name="tile_10111811" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="128" y="144" w="16" h="16" xo="32" yo="64" id="10111812" name="tile_10111812" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="112" y="144" w="16" h="16" xo="32" yo="48" id="10111813" name="tile_10111813" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="128" y="48" w="16" h="16" xo="16" yo="64" id="10111814" name="tile_10111814" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="112" y="64" w="32" h="64" xo="0" yo="80" id="10111815" name="tile_10111815" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="144" y="80" w="16" h="48" xo="32" yo="96" id="10111816" name="tile_10111816" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="160" y="112" w="16" h="16" xo="32" yo="32" id="10111817" name="tile_10111817" depth="110" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea5BG" x="96" y="144" w="16" h="32" xo="16" yo="80" id="10111818" name="tile_10111818" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea5BG" x="80" y="144" w="16" h="32" xo="16" yo="80" id="10111819" name="tile_10111819" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea5BG" x="64" y="144" w="16" h="32" xo="16" yo="80" id="10111820" name="tile_10111820" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -142,8 +130,6 @@ if (oControl.mod_gravity != 9) instance_create(152, 160, scr_itemsopen(oControl.
     <tile bgName="tlArea5BG" x="200" y="80" w="8" h="16" xo="8" yo="80" id="10111865" name="tile_10111865" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea5BG" x="200" y="64" w="8" h="16" xo="8" yo="80" id="10111866" name="tile_10111866" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlArea5BG" x="200" y="48" w="8" h="16" xo="8" yo="80" id="10111867" name="tile_10111867" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="144" y="112" w="32" h="48" xo="48" yo="80" id="10111868" name="tile_10111868" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlGravityBG" x="144" y="48" w="32" h="64" xo="0" yo="0" id="10111869" name="tile_10111869" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlGravityBG" x="128" y="48" w="16" h="32" xo="32" yo="0" id="10111870" name="tile_10111870" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlGravityBG" x="176" y="48" w="16" h="32" xo="32" yo="0" id="10111871" name="tile_10111871" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlGravityBG" x="112" y="40" w="16" h="32" xo="32" yo="0" id="10111872" name="tile_10111872" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

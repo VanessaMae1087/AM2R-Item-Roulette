@@ -16,9 +16,7 @@ global.waterlevel = 0;
 global.watertype = 0;
 global.floormaterial = 4;
 global.save_room = quitroom;
-if (global.event[103] &gt; 0 &amp;&amp; global.item[scr_itemchange(3)] == 0) {
-    instance_create(112, 96, scr_itemsopen(oControl.mod_jumpball));
-}
+
 //mus_change(musArea2A);
 
 if(instance_number(oCharacter) &gt; 0) mus_change(musArea2A);

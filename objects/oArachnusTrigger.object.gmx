@@ -49,9 +49,14 @@ image_yscale = 20;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (oArachnusStatue) event_user(0);
+            <string>//if (global.item[3]) {
+if (global.item[scr_itemchange(3)])
+{
+with (oDoor) event_user(0);
+with (oArachnusStatue) event_user(0);
 mus_current_fadeout();
 instance_destroy();
+}
 </string>
           </argument>
         </arguments>

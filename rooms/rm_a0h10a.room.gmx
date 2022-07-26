@@ -361,7 +361,7 @@ mus_change(mus_get_main_song());</code>
     <instance objName="oSolid1" x="464" y="192" name="inst_103814" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="448" y="96" name="inst_103815" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="48" y="96" name="inst_103816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSolid1x8" x="176" y="352" name="inst_103817" locked="0" code="&#xA;if (global.lavastate &gt; 4) {&#xA;    tile_layer_delete(-99);&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1x8" x="176" y="352" name="inst_103817" locked="0" code="if (global.lavastate &gt; 4) {&#xA;    tile_layer_delete(-99);&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="256" y="288" name="inst_103818" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="256" y="304" name="inst_103819" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="256" y="320" name="inst_103820" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

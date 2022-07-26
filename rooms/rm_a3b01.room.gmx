@@ -3,8 +3,8 @@
   <caption></caption>
   <width>960</width>
   <height>240</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -237,8 +237,34 @@ mus_change(musCaveAmbience);</code>
     <instance objName="oBlockBomb" x="672" y="112" name="inst_119846" locked="0" code="&#xA;link_tile(tlBrick2, 112, 112);&#xA;regentime = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGotoRoom" x="0" y="176" name="inst_119847" locked="0" code="&#xA;targetroom = rm_a3h02;&#xA;targetx = 304;&#xA;targety = 656;&#xA;height = 64;&#xA;direction = 180;&#xA;camstartx = 304;&#xA;camstarty = 600;&#xA;transitionx = 316;&#xA;transitiony = 176;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGotoRoom" x="880" y="240" name="inst_119848" locked="0" code="&#xA;targetroom = rm_a3b02;&#xA;targetx = 240;&#xA;targety = 16;&#xA;height = 64;&#xA;direction = 270;&#xA;camstartx = 240;&#xA;camstarty = 16;&#xA;transitionx = 246;&#xA;transitiony = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlope1B" x="912" y="128" name="inst_DA4C0B98" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlope1B" x="848" y="144" name="inst_B62D457B" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    tile_layer_delete(-99);&#xA;    tile_layer_delete(-120);&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlope1B" x="768" y="160" name="inst_ED0C2450" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlope1B" x="384" y="192" name="inst_5FBF80BE" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlope1" x="368" y="208" name="inst_06055F9B" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="416" y="192" name="inst_5EC2C831" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="800" y="160" name="inst_8972DE8F" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="880" y="144" name="inst_5027EFC6" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="640" y="176" name="inst_AF5A5C31" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSolid1" x="480" y="176" name="inst_2244079C" locked="0" code="if (global.lavastate &gt; 2) {&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
+    <tile bgName="tlRock3A" x="912" y="128" w="32" h="32" xo="0" yo="240" id="10166555" name="inst_3D3D2B2B" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="848" y="144" w="32" h="32" xo="0" yo="240" id="10166556" name="inst_60A46C2B" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="768" y="160" w="32" h="32" xo="0" yo="240" id="10166557" name="inst_44E99601" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="384" y="192" w="32" h="32" xo="0" yo="240" id="10166558" name="inst_62356BEE" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="368" y="208" w="16" h="32" xo="64" yo="176" id="10166559" name="inst_B4E18E83" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="416" y="176" w="32" h="32" xo="32" yo="144" id="10166560" name="inst_24BA1D18" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="736" y="160" w="32" h="32" xo="32" yo="144" id="10166561" name="inst_F3A64720" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="688" y="160" w="32" h="32" xo="0" yo="144" id="10166562" name="inst_9FB4D3FD" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="560" y="160" w="48" h="32" xo="32" yo="144" id="10166564" name="inst_146D79A7" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="880" y="128" w="32" h="32" xo="0" yo="144" id="10166565" name="inst_E494D68E" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="880" y="160" w="32" h="32" xo="96" yo="208" id="10166569" name="inst_ECDF687F" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="880" y="192" w="32" h="32" xo="96" yo="208" id="10166570" name="inst_C8F1C288" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="912" y="160" w="16" h="32" xo="96" yo="208" id="10166571" name="inst_92D9C2CC" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="912" y="192" w="16" h="32" xo="96" yo="208" id="10166572" name="inst_D9B8436A" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="880" y="224" w="16" h="16" xo="96" yo="208" id="10166573" name="inst_9E9CD29A" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="896" y="224" w="32" h="16" xo="96" yo="208" id="10166574" name="inst_B646570E" depth="-99" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlBrick2" x="48" y="96" w="16" h="16" xo="80" yo="80" id="10059384" name="tile_10059384" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlBrick2" x="800" y="32" w="16" h="16" xo="80" yo="80" id="10059385" name="tile_10059385" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlBrick2" x="48" y="32" w="16" h="16" xo="16" yo="48" id="10059386" name="tile_10059386" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -504,6 +530,10 @@ mus_change(musCaveAmbience);</code>
     <tile bgName="tlBrick2" x="816" y="224" w="16" h="16" xo="48" yo="48" id="10059646" name="tile_10059646" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlBrick2" x="848" y="176" w="16" h="16" xo="16" yo="0" id="10059647" name="tile_10059647" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlBrick2" x="928" y="176" w="16" h="64" xo="0" yo="16" id="10059648" name="tile_10059648" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="496" y="160" w="32" h="32" xo="0" yo="144" id="10166563" name="inst_6469C841" depth="-120" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="816" y="144" w="32" h="32" xo="32" yo="144" id="10166567" name="inst_683394AF" depth="-120" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="800" y="144" w="16" h="32" xo="64" yo="144" id="10166568" name="inst_1E3DFD6B" depth="-120" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlRock3A" x="656" y="160" w="32" h="32" xo="32" yo="144" id="10166575" name="inst_5CCDD724" depth="-120" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

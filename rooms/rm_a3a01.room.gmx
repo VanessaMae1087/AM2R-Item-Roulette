@@ -61,7 +61,7 @@ mus_change_itemroom();</code>
     <instance objName="oBackground" x="0" y="0" name="inst_114921" locked="0" code="&#xA;load_bgset(30);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTorizoTrigger" x="560" y="288" name="inst_114922" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="oTorizoCam" x="480" y="368" name="inst_114923" locked="0" code="&#xA;if (global.event[152] &gt; 0) instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItemBall3" x="416" y="400" name="inst_114924" locked="0" code="//item = 6;&#xA;item = scr_itemchange(6);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItemBall3" x="416" y="400" name="inst_114924" locked="0" code="//item = 6;&#xA;item = scr_itemchange(6);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope1" x="384" y="384" name="inst_114925" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlope2" x="400" y="384" name="inst_114926" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="624" y="352" name="inst_114927" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -76,8 +76,8 @@ mus_change_itemroom();</code>
     <instance objName="oSolid2x1" x="304" y="192" name="inst_114936" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid2x1" x="464" y="192" name="inst_114937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid2x2" x="384" y="400" name="inst_114938" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDoor" x="616" y="368" name="inst_114939" locked="0" code="&#xA;lock = 4;&#xA;event = 152;&#xA;stayopen = 1;&#xA;" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oTorizoStatue" x="384" y="384" name="inst_114940" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoor" x="616" y="368" name="inst_114939" locked="0" code="lock = 4;&#xA;event = 152;&#xA;stayopen = 1;" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oTorizoStatue" x="384" y="320" name="inst_114940" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="640" y="352" name="inst_330D37D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid4x1" x="640" y="432" name="inst_EE83014F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

@@ -12,7 +12,7 @@
   <showcolour>0</showcolour>
   <code>global.mapoffsetx = 38;
 global.mapoffsety = 37;
-if (global.lavastate &lt;= 6) make_liquid(1, 227, 0, 0, 0, 0, 1);
+if (global.lavastate &lt;= 5) make_liquid(1, 227, 0, 0, 0, 0, 1);
 global.floormaterial = 1;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

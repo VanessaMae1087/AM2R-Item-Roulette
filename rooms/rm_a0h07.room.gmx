@@ -483,10 +483,6 @@ with(oBlockSpeed){
     <instance objName="oSolid1" x="896" y="928" name="inst_102586" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSolid1" x="912" y="928" name="inst_102587" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlockMissile" x="864" y="944" name="inst_102588" locked="0" code="link_tile(tlRock2NB, 96, 240);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlockBomb" x="560" y="288" name="inst_102589" locked="0" code="&#xA;link_tile(tlRock1AN, 32, 384);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlockBomb" x="576" y="288" name="inst_102590" locked="0" code="link_tile(tlRock1AN, 0, 384);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlockBomb" x="592" y="288" name="inst_102591" locked="0" code="&#xA;link_tile(tlRock1AN, 16, 384);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlockBomb" x="608" y="288" name="inst_102592" locked="0" code="&#xA;link_tile(tlRock1AN, 32, 384);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCaveNest" x="200" y="28" name="inst_102593" locked="0" code="&#xA;image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCaveNest" x="628" y="76" name="inst_102594" locked="0" code="&#xA;image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oCaveNest" x="1188" y="12" name="inst_102595" locked="0" code="&#xA;image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
